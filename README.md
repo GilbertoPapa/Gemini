@@ -71,25 +71,25 @@ Descrição da estrutura de diretórios e módulos do projeto.
 │   │   │   └── GeminiService
 │   │   └── di.provider/
 │   │       └── GeminiProvider
-├── Domain/
-│   ├── model/
-│   │   └── GeminiDTO
-│   ├── repository/
-│   │   └── KeyRepository
-│   │   └── GeminiRepository
-│   └── usecase/
-│       ├── GeminiUseCase
-│       └── KeyUseCase
-├── Presentation/
-│   ├── ui.component/
-│   │   ├── GenerateButton
-│   │   ├── SeedInputField
-│   │   └── StateContent
-│   ├── screen/
-│   │   └── GeminiScreen
-│   └── ViewModel/
-│       ├── GeminiState
-│       └── GeminiViewModel
+│   ├── Domain/
+│   │   ├── model/
+│   │   │   └── GeminiDTO
+│   │   ├── repository/
+│   │   │   ├── KeyRepository
+│   │   │   └── GeminiRepository
+│   │   └── usecase/
+│   │       ├── GeminiUseCase
+│   │       └── KeyUseCase
+│   ├── Presentation/
+│   │   ├── ui.component/
+│   │   │   ├── GenerateButton
+│   │   │   ├── SeedInputField
+│   │   │   └── StateContent
+│   │   ├── screen/
+│   │   │   └── GeminiScreen
+│   │   └── viewmodel/
+│   │       ├── GeminiState
+│   │       └── GeminiViewModel
 ```
 
 ## Licença
