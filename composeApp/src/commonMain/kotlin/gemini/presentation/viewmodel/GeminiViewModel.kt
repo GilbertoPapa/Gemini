@@ -11,10 +11,13 @@ import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.onStart
 import kotlinx.coroutines.launch
 import gemini.domain.usecase.GeminiUseCase
+import gemini.domain.usecase.KeyUseCase
 import kotlinx.coroutines.flow.flowOn
+import kotlinx.coroutines.withContext
 
 class GeminiViewModel(
     private val geminiUseCase: GeminiUseCase,
+    private val keyUseCase: KeyUseCase,
     private val dispatcher: CoroutineDispatcher = Dispatchers.IO
 ) : ViewModel() {
 
@@ -23,13 +26,19 @@ class GeminiViewModel(
 
     fun postPrompt(seed: String) {
         viewModelScope.launch {
-            geminiUseCase.invoke(seed = seed)
+            geminiUseCase.invoke(seed = seed, key = getKey())
                 .flowOn(dispatcher)
                 .onStart { _geminiState.value = GeminiState.Loading }
                 .catch { onError(it) }
                 .collect { onSuccess(it.description) }
         }
     }
+
+    private suspend fun getKey() =
+        withContext(dispatcher) {
+            keyUseCase.invoke()
+        }
+
 
     private fun onSuccess(description: String) {
         _geminiState.value = GeminiState.ShowDescription(description)
