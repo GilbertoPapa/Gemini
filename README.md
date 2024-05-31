@@ -20,7 +20,7 @@ Instruções sobre como configurar o ambiente de desenvolvimento.
 
 ### API key 
 
-- [AI Studio]([https://kotlinlang.org/](https://aistudio.google.com/app/apikey))
+- [AIStudio]([https://kotlinlang.org/](https://aistudio.google.com/app/apikey))
 
 Coloque aqui sua chave :
 
