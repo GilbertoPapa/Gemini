@@ -18,3 +18,4 @@ captures
 **/xcshareddata/WorkspaceSettings.xcsettings
 build/ios/Debug-iphonesimulator/ComposeApp.framework/ComposeApp
 composeApp/build/bin/iosSimulatorArm64/debugFramework/ComposeApp.framework/ComposeApp
+/Users/gilbertopapa/Desenvolvimento/Gemini/composeApp/src/commonMain/composeResources/files/config.json

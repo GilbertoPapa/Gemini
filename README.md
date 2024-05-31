@@ -24,7 +24,9 @@ Instruções sobre como configurar o ambiente de desenvolvimento.
 
 Coloque aqui sua chave :
 
-`const val PARAM_GEMINI_KEY = "gemini_key"`
+`{
+"gemini_key": "gemini_key"
+}`
 
 ## Diagrama de Arquitetura em Camadas
 
@@ -40,39 +42,56 @@ Descrição da estrutura de diretórios e módulos do projeto.
 │   │   ├── ConfigClient
 │   │   └── ConfigClientConstants
 │   ├── di/
-│   │   ├── FeaturesModules.kt
-│   │   └── Inject.kt
+│   │   ├── FeaturesModules
+│   │   └── Inject
 ├── Gemini/
 │   ├── Data/
 │   │   ├── datasource/
-│   │   │   ├── GeminiDataSource
-│   │   │   └── GeminiDataSourceImpl
-│   │   ├── keys/
-│   │   │   └── ServiceConstants
+│   │   │   └── remote/
+│   │   │       ├── GeminiRemoteDataSource
+│   │   │       └── GeminiRemoteDataSourceImpl
+│   │   ├── config/
+│   │   │   ├── file/
+│   │   │   │   ├── FileConfigProvider
+│   │   │   │   └── FileConfigProviderImpl
+│   │   │   ├── parser/
+│   │   │   │   ├── JsonParser
+│   │   │   │   └── JsonParserImpl
+│   │   │   └── resource/
+│   │   │       ├── ResourceReader
+│   │   │       └── ResourceReaderImpl
 │   │   ├── mapper/
 │   │   │   └── GeminiMapper
 │   │   ├── model/
-│   │   │   ├── GeminiRequest.kt
-│   │   │   └── GeminiResponse.kt
+│   │   │   ├── Config
+│   │   │   ├── GeminiRequest
+│   │   │   └── GeminiResponse
 │   │   ├── repository/
-│   │   │   └── GeminiRepositoryImpl
+│   │   │   ├── GeminiRepositoryImpl
+│   │   │   └── KeyRepositoryImpl
 │   │   ├── service/
 │   │   │   └── GeminiService
 │   │   └── di.provider/
 │   │       └── GeminiProvider
-├── Domain/
-│   ├── model/
-│   │   └── GeminiDTO
-├── Presentation/
-│   ├── ui.component/
-│   │   ├── GenerateButton.kt
-│   │   ├── SeedInputField.kt
-│   │   └── StateContent.kt
-│   ├── screen/
-│   │   └── GeminiScreen.kt
-│   └── ViewModel/
-│       ├── GeminiState
-│       └── GeminiViewModel
+│   ├── Domain/
+│   │   ├── model/
+│   │   │   └── GeminiDTO
+│   │   ├── repository/
+│   │   │   ├── KeyRepository
+│   │   │   └── GeminiRepository
+│   │   └── usecase/
+│   │       ├── GeminiUseCase
+│   │       └── KeyUseCase
+│   ├── Presentation/
+│   │   ├── ui.component/
+│   │   │   ├── GenerateButton
+│   │   │   ├── SeedInputField
+│   │   │   └── StateContent
+│   │   ├── screen/
+│   │   │   └── GeminiScreen
+│   │   └── viewmodel/
+│   │       ├── GeminiState
+│   │       └── GeminiViewModel
 ```
 
 ## Licença
