@@ -40,22 +40,33 @@ Descrição da estrutura de diretórios e módulos do projeto.
 │   │   ├── ConfigClient
 │   │   └── ConfigClientConstants
 │   ├── di/
-│   │   ├── FeaturesModules.kt
-│   │   └── Inject.kt
+│   │   ├── FeaturesModules
+│   │   └── Inject
 ├── Gemini/
 │   ├── Data/
 │   │   ├── datasource/
-│   │   │   ├── GeminiDataSource
-│   │   │   └── GeminiDataSourceImpl
-│   │   ├── keys/
-│   │   │   └── ServiceConstants
+│   │   │   └── remote/
+│   │   │       ├── GeminiRemoteDataSource
+│   │   │       └── GeminiRemoteDataSourceImpl
+│   │   ├── config/
+│   │   │   ├── file/
+│   │   │   │   ├── FileConfigProvider
+│   │   │   │   └── FileConfigProviderImpl
+│   │   │   ├── parser/
+│   │   │   │   ├── JsonParser
+│   │   │   │   └── JsonParserImpl
+│   │   │   └── resource/
+│   │   │       ├── ResourceReader
+│   │   │       └── ResourceReaderImpl
 │   │   ├── mapper/
 │   │   │   └── GeminiMapper
 │   │   ├── model/
-│   │   │   ├── GeminiRequest.kt
-│   │   │   └── GeminiResponse.kt
+│   │   │   ├── Config
+│   │   │   ├── GeminiRequest
+│   │   │   └── GeminiResponse
 │   │   ├── repository/
-│   │   │   └── GeminiRepositoryImpl
+│   │   │   ├── GeminiRepositoryImpl
+│   │   │   └── KeyRepositoryImpl
 │   │   ├── service/
 │   │   │   └── GeminiService
 │   │   └── di.provider/
@@ -63,13 +74,19 @@ Descrição da estrutura de diretórios e módulos do projeto.
 ├── Domain/
 │   ├── model/
 │   │   └── GeminiDTO
+│   ├── repository/
+│   │   └── KeyRepository
+│   │   └── GeminiRepository
+│   └── usecase/
+│       ├── GeminiUseCase
+│       └── KeyUseCase
 ├── Presentation/
 │   ├── ui.component/
-│   │   ├── GenerateButton.kt
-│   │   ├── SeedInputField.kt
-│   │   └── StateContent.kt
+│   │   ├── GenerateButton
+│   │   ├── SeedInputField
+│   │   └── StateContent
 │   ├── screen/
-│   │   └── GeminiScreen.kt
+│   │   └── GeminiScreen
 │   └── ViewModel/
 │       ├── GeminiState
 │       └── GeminiViewModel
