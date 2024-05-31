@@ -1,4 +1,4 @@
-# Nome do Projeto KMP
+# Gemini
 
 ![Licença](https://img.shields.io/badge/licença-MIT-blue.svg)
 ![Versão](https://img.shields.io/badge/versão-1.0.0-brightgreen.svg)
