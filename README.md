@@ -20,7 +20,11 @@ Instruções sobre como configurar o ambiente de desenvolvimento.
 
 ### API key 
 
-[AI Studio] (https://aistudio.google.com/app/apikey)
+[AI Studio]([https://kotlinlang.org/](https://aistudio.google.com/app/apikey))
+
+Coloque aqui sua chave :
+
+`const val PARAM_GEMINI_KEY = "gemini_key"`
 
 ## Diagrama de Arquitetura em Camadas
 
