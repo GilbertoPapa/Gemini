@@ -18,6 +18,10 @@ Instruções sobre como configurar o ambiente de desenvolvimento.
 - [Gradle](https://gradle.org/)
 
 
+### API key 
+
+[AI Studio] (https://aistudio.google.com/app/apikey)
+
 ## Diagrama de Arquitetura em Camadas
 
 <img width="897" alt="Captura de Tela 2024-05-31 às 09 52 10" src="https://github.com/GilbertoPapa/Gemini/assets/15881202/a5d5d9fa-53e5-468f-9874-4545bc26282b">
