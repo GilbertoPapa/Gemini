@@ -24,7 +24,9 @@ Instruções sobre como configurar o ambiente de desenvolvimento.
 
 Coloque aqui sua chave :
 
-`const val PARAM_GEMINI_KEY = "gemini_key"`
+`{
+"gemini_key": "gemini_key"
+}`
 
 ## Diagrama de Arquitetura em Camadas
 
