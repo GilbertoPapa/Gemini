@@ -20,7 +20,7 @@ Instruções sobre como configurar o ambiente de desenvolvimento.
 
 ## Diagrama de Arquitetura em Camadas
 
-![Captura de Tela 2024-05-31 às 09.52.10.png](..%2F..%2FDesktop%2FCaptura%20de%20Tela%202024-05-31%20%C3%A0s%2009.52.10.png)
+<img width="897" alt="Captura de Tela 2024-05-31 às 09 52 10" src="https://github.com/GilbertoPapa/Gemini/assets/15881202/a5d5d9fa-53e5-468f-9874-4545bc26282b">
 
 ## Estrutura do Projeto
 
